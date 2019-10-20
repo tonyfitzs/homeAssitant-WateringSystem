@@ -1,4 +1,4 @@
-*Project*
+**Project**
 
 This project was developed because.
 
@@ -6,13 +6,13 @@ This project was developed because.
 2.	If there is a more complex way of doing something. Hey, why not!
 3.	My requirements could not be met by a commercial off the shelf (COTS) solution
 
-*Requirments*
+**Requirments**
 So in terms of requirements, they were pretty conventional generally speaking, I have a small back yard which has two hi yield sprinklers each covering an ark of about 15 meters, I also have a number of potted plants that are to be watered via some low volume sprays  as well as a small vegetable plot which is covered by five 2.5 meter ark sprays.
 To drive all of these sprinklers I have two solenoids, I turn on one solenoid to water the yard as well as the pot plants and the other solenoid to water the vegetable garden. 
 So far this is very easy and could be done with any COTS Sprinkler controller, but I also wanted to integrate my sprinklers into Home Assitant, this dramatically reduced the list of options. I also didn’t want to spend a load of cash which pretty much ruled out all the COTS options for my use case. But there is also one other requirement which would be very difficult to solve with a COTS solution. That is I need to be able to have my watering system decide if it should use water from a tank or if it should use water from the main. 
 So all that said and done I decided to embark on an approach using a NodeMCU D1 Mini controller and a number of other bits and bobs, the whole project cost me less than $150.
 
-*Bill of Materials*
+**Bill of Materials**
 
 So here is the list of parts I used 
 *	1 x NodeMCU, any version will do on average these cost about $6 
@@ -31,7 +31,7 @@ So here is the list of parts I used
 
 *	1 x Non-contact Digital Water / Liquid Level Sensor For Arduino, this is what I use to tell if my water tank has water in it or not, this sensor cost about $10.00 and doesn't require any modification to the tank, in senses changes in the specific gravity around it. 
 
-*The fun stuff*
+**The fun stuff**
 
 Ok so what we have now is a bunch of bits, so let's hook it all together. Now I'm going to assume that this is not your first BBQ and you know how to use an Arduino device because basically that’s all the NodeMCU is. 
 If you want to, you could build an Arduino sketch that will be fit for purpose, but one of the reasons I chose the NodeMCU is because you can load Tasmota on it. so that’s exactly what I did, below is a screenshot of my Tasmota settings, as you can see I have set it up as a Generic Module and I am using D0 through to D4 for my controls
