@@ -1,11 +1,12 @@
-<h1>Project
+<h1> Project <h1>
 
 This project was developed because.
+
 1.	I'm a giant nerd!
 2.	If there is a more complex way of doing something. Hey, why not!
 3.	My requirements could not be met by a commercial off the shelf (COTS) solution
 
-<h1>Requirments
+<h1> Requirments 
 So in terms of requirements, they were pretty conventional generally speaking, I have a small back yard which has two hi yield sprinklers each covering an ark of about 15 meters, I also have a number of potted plants that are to be watered via some low volume sprays  as well as a small vegetable plot which is covered by five 2.5 meter ark sprays.
 To drive all of these sprinklers I have two solenoids, I turn on one solenoid to water the yard as well as the pot plants and the other solenoid to water the vegetable garden. 
 So far this is very easy and could be done with any COTS Sprinkler controller, but I also wanted to integrate my sprinklers into Home Assitant, this dramatically reduced the list of options. I also didn’t want to spend a load of cash which pretty much ruled out all the COTS options for my use case. But there is also one other requirement which would be very difficult to solve with a COTS solution. That is I need to be able to have my watering system decide if it should use water from a tank or if it should use water from the main. 
