@@ -35,7 +35,7 @@ The fun stuff.
 Ok so what we have now is a bunch of bits, so let's hook it all together. Now I'm going to assume that this is not your first BBQ and you know how to use an Arduino device because basically that’s all the NodeMCU is. 
 If you want to, you could build an Arduino sketch that will be fit for purpose, but one of the reasons I chose the NodeMCU is because you can load Tasmota on it. so that’s exactly what I did, below is a screenshot of my Tasmota settings, as you can see I have set it up as a Generic Module and I am using D0 through to D4 for my controls
 
-❮img src="images/TasmotaSettings.png"❯
+![Image of Tasmota Settings](https://octodex.github.com/images/yaktocat.png)
 
 One of the unfortunate things I have found however with Tasmota, which is kind of irritating is that you can't read an input GPI via MQTT, or at least I haven't been able to find a way of doing it. if anyone reading this happens to know then please tell me because that would be very helpful. The reason I want to be able to do that is that in my setup I need to read the status of the water level sensor to decide if I need to use the pump or not. 
 So as a workaround what I have done is set the input as a switch, this is coming in on D0 (GPIO16) and in order to be able to read its status I have a corresponding dummy Relay setup on D8 (GPIO15), now its important to note, there isn’t actually a relay attached to D8, this is just set up so that we can see the status in Home Assitant as well as via the tasmota Dashboard which you can see below. 
