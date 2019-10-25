@@ -52,7 +52,7 @@ I have also included a collection of pictures of my actual installation, now Iâ€
 
 ![Image of Watering main controler](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/Watering_main_controler1.jpg)
 
-![Image of Watering main controller alternative view](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/Watering_main controler2.jpg)
+![Image of Watering main controller alternative view](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/Watering_main_controler2.jpg)
 
 ![Image of Tank Empty Sensor](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/TankEmptySensor.jpg)
 
