@@ -48,7 +48,7 @@ So as a workaround what I have done is set the input as a switch, this is coming
 
 ![Image of Tasmota dashboard](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/TasmotaDashboard.PNG)
 
-Ok, so hopefully this is all coming together, and its possibly safe to assume that anyone embarking on this kind of project has a basic understanding of how to connect things together, but I hat assumptions😊 I can’t begin to tell you how many of these kinds of tutorials I have read when the writer has left out a critical bit of info because of an assumption. I don’t want to be that guy. 
+Ok, so hopefully this is all coming together, and its possibly safe to assume that anyone embarking on this kind of project has a basic understanding of how to connect things together, but I hate assumptions😊 I can’t begin to tell you how many of these kinds of tutorials I have read when the writer has left out a critical bit of info because of an assumption. I don’t want to be that guy. 
 So below you should see a diagram of how my setup is connected together, I have also included the Fritzing file in the diagram folder
 ![Image of Circuit layout](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/Watering_system_Layout.png)
 
