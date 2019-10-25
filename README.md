@@ -93,55 +93,94 @@ Below is an example of what the MQTT setings look like for my setup.
 ##       Pump         ##
 ########################
   - platform: mqtt
+  
     name: "Pump"
+    
     command_topic: “sprinklers/cmnd/POWER1”
+    
     state_topic: “sprinklers/cmnd/POWER1"
+    
     qos: 1
+    
     payload_on: “ON”
+    
     payload_off: “OFF”
+    
     payload_available: “Online”
+    
     payload_not_available: “Offline”
+    
     retain: false 
+    
 ########################
 ##        Main        ##
 ########################   
   - platform: mqtt
+  
     name: "Main"
+    
     command_topic: “sprinklers/cmnd/POWER2”
+    
     state_topic: “sprinklers/cmnd/POWER2”
+    
     qos: 1
+    
     payload_on: “ON”
+    
     payload_off: “OFF”
+    
     payload_available: “Online”
+    
     payload_not_available: “Offline”
+    
     retain: false   
+    
 ########################
 ##         Yard       ##
 ########################   
   - platform: mqtt
+  
     name: "Yard"
+    
     command_topic: “sprinklers/cmnd/POWER4”
+    
     state_topic: “sprinklers/cmnd/POWER4"
+    
     qos: 1
+    
     payload_on: “ON”
+    
     payload_off: “OFF”
+    
     payload_available: “Online”
+    
     payload_not_available: “Offline”
+    
     retain: false 
+    
 ########################
 ##      Garden        ##
 ########################   
   - platform: mqtt
+  
     name: "Garden"
+    
     command_topic: “sprinklers/cmnd/POWER3”
+    
     state_topic: “sprinklers/cmnd/POWER3
+    
     qos: 1
+    
     payload_on: “ON”
+    
     payload_off: “OFF”
+    
     payload_available: “Online”
+    
     payload_not_available: “Offline”
-    retain: false           
-
+    
+    retain: false  
+    
 once Home Assitant has the switches configured, I am going to assume you know what to do from there, of not go back to the getting started with Home Assitant videos, of which there are hundreds. 
 
 
