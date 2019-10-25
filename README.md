@@ -75,5 +75,6 @@ In my setup, I actually have a second controller setup for a different part of t
 ![Image of Secondary Controler](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/SecondaryControleroverview.jpg)
 
 # NodeRed. 
-if your not using Node red. I have one question for you. ARE YOU MAD? 
-In my setup I use NodeRed a lot, basically because the automation in Home assistant can get pretty unwieldy if you have to do something really complex. Now I’m not going to explain how to use NodeRed there are a heap of tutorials out there,  but what I have done is added the code from my NodeRed node that is used to control my watering system, hopefully you wont have to much trouble figuring out how to make it all work. But you will need to install the big timer component as well 
+if you're not using Node-red. I have one question for you. ARE YOU MAD? 
+In my setup, I use NodeRed a lot, basically because the automation in Home assistant can get pretty unwieldy if you have to do something really complex. Now I’m not going to explain how to use NodeRed there are a heap of tutorials out there,  but what I have done is added the code from my NodeRed node that is used to control my watering system, hopefully you won't have to much trouble figuring out how to make it all work. But you will need to install the big timer component as well 
+
