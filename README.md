@@ -79,9 +79,12 @@ In my setup, I actually have a second controller setup for a different part of t
 
 # Integration into Home Assistant 
 There are a couple of approaches with regard to getting all the buttons and switches into Home Assitant, the approach I choose to use is send the command “setoption19 1” from the console in Tasmota, this will enable Home Assitant to Autodiscover all the switches. 
+
 Now this approach isn’t perfect, in fact it's pretty not perfect😊 once you issue that command whatever you have named your stitches as will be sent to Home assistant, and even if you change the names Home Assitant remembers the old ones and just makes new ones, this is annoying. So what I do is make sure that I have named all my switches in Tasmota first. You do that by going into configuration, then configure other. There you will see the place to name all the switches. 
+
 The other approach is to use a switch.yaml file and include that in your configuration.yaml using the following line “switch: !include Includes/switch.yaml”
 Below is an example of what the MQTT setings look like for my setup.
+
 **Note: **when I fist started using Tasmotta, I got traped by a setting that is often assumed you know. That is the Full Topic seting in the Tasmotta MQTT settings, in my case it is set to %topic%/%prefix%/ which means that the command topic and state topic are formatted as show below, but if the setting is %prefix%/%topic%/ needless to say the command topic and state topic will look like this " cmnd/sprinklers/POWER1” sorry for those who know this. But as I said I hate assumptions. 
 
 ########################
