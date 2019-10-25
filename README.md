@@ -187,14 +187,18 @@ once Home Assitant has the switches configured, I am going to assume you know wh
 
 
 # NodeRed. 
-if you're not using Node-red. I have one question for you. ARE YOU MAD? 
+If you're not using Node-red. I have one question for you. **ARE YOU MAD?**
+
 In my setup, I use NodeRed a lot, basically because the automation in Home assistant can get pretty unwieldy if you have to do something really complex. Now I’m not going to explain how to use NodeRed there are a heap of tutorials out there,  but what I have done is added the code from my NodeRed node that is used to control my watering system; hopefully you won't have to much trouble figuring out how to make it all work. 
 
 But you will need to add a couple of components, the first one is Bigtimmer
 https://flows.nodered.org/node/node-red-contrib-bigtimer 
+
 the second one is bool-gate
 https://flows.nodered.org/node/node-red-contrib-bool-gate
-to add these to NodeRed it is pretty easy, all you need to do is navigate to the “manage palettes” menu in Node-red (click on the hamburger icon in the top right corner), from there you can see an install option in the top row of the form, (just under the close button) if you type into the search “bigtimer” you will see the big timmer option appear, you just need to then install it. the same applies to gate. 
+
+To add these to NodeRed it is pretty easy, all you need to do is navigate to the “manage palettes” menu in Node-red (click on the hamburger icon in the top right corner), from there you can see an install option in the top row of the form, (just under the close button) if you type into the search “bigtimer” you will see the big timmer option appear, you just need to then install it. the same applies to gate. 
+
 I generally find that it is better to add these additional things before importing a flow, but don’t worry if you don’t, Node-Red will tell you if something is missing, the only problem is you need to pay attention during the import or else you won't know what's missing. 
 
 I hope you have found this useful. Feel free to leave a comment or ask questions, I'm a pretty busy guy generally so if I don’t answer you right away, please don’t get offended. But I will do my best to get back to you as soon as I can. 
