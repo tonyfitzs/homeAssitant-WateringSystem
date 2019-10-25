@@ -1,3 +1,4 @@
+
 # Project
 
 This project was developed because.
@@ -45,7 +46,29 @@ So as a workaround what I have done is set the input as a switch, this is coming
 
 Ok, so hopefully this is all coming together, and its possibly safe to assume that anyone embarking on this kind of project has a basic understanding of how to connect things together, but I hat assumptions😊 I can’t begin to tell you how many of these kinds of tutorials I have read when the writer has left out a critical bit of info because of an assumption. I don’t want to be that guy. 
 So below you should see a diagram of how my setup is connected together, I have also included the Fritzing file in the diagram folder
-
 ![Image of Circuit layout](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/Watering_system_Layout.png)
 
+I have also included a collection of pictures of my actual installation, now I’m not the most detailed dude. So when I install stuff in my own place it tends to be a little slap dash, but you get the idea of what it is we are trying to do. So below in order are pictures of my system
+![Image of Watering main controler](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/ Watering_main controler1.jpg)
 
+![Image of Watering main controller alternative view](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/ Watering_main controler2.jpg)
+
+![Image of Tank Empty Sensor](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/TankEmptySensor.jpg)
+
+![Image of pump](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/Pump.jpg)
+
+![Image of NodeMCU](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/NodeMCU.jpg)
+
+![Image of Main Valve ](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/MainValve.jpg)
+![Image of IP54 box ](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/ IP54 box.jpg)
+
+
+In my setup, I actually have a second controller setup for a different part of the garden, as you can see I have put a lot more effort into the setup of the box and it’s a lot neater
+![Image of IP54 box ](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/ IP54 box.jpg)
+![Image of Secondary Controler](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/SecondaryControler.jpg)
+![Image of Secondary Controler](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/SecondaryControlerExternal.jpg)
+![Image of Secondary Controler](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/SecondaryControleroverview.jpg)
+
+# NodeRed. 
+if your not using Node red. I have one question for you. ARE YOU MAD? 
+In my setup I use NodeRed a lot, basically because the automation in Home assistant can get pretty unwieldy if you have to do something really complex. Now I’m not going to explain how to use NodeRed there are a heap of tutorials out there,  but what I have done is added the code from my NodeRed node that is used to control my watering system, hopefully you wont have to much trouble figuring out how to make it all work. But you will need to install the big timer component as well 
