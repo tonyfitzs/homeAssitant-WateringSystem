@@ -62,12 +62,10 @@ I have also included a collection of pictures of my actual installation, now Iâ€
 
 ![Image of Main Valve ](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/MainValve.jpg)
 
-![Image of IP54 box ](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/ IP54 box.jpg)
-
 
 In my setup, I actually have a second controller setup for a different part of the garden, as you can see I have put a lot more effort into the setup of the box and itâ€™s a lot neater
 
-![Image of IP54 box ](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/ IP54 box.jpg)
+![Image of IP54 box ](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/IP54box.jpg)
 
 ![Image of Secondary Controler](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/SecondaryControler.jpg)
 
