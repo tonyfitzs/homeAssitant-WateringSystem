@@ -49,7 +49,7 @@ So below you should see a diagram of how my setup is connected together, I have 
 ![Image of Circuit layout](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/Watering_system_Layout.png)
 
 I have also included a collection of pictures of my actual installation, now I’m not the most detailed dude. So when I install stuff in my own place it tends to be a little slap dash, but you get the idea of what it is we are trying to do. So below in order are pictures of my system
-![Image of Watering main controler](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/ Watering_main controler1.jpg)
+![Image of Watering main controler](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/Watering_main controler1.jpg)
 
 ![Image of Watering main controller alternative view](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/ Watering_main controler2.jpg)
 
@@ -60,13 +60,18 @@ I have also included a collection of pictures of my actual installation, now I�
 ![Image of NodeMCU](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/NodeMCU.jpg)
 
 ![Image of Main Valve ](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/MainValve.jpg)
+
 ![Image of IP54 box ](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/ IP54 box.jpg)
 
 
 In my setup, I actually have a second controller setup for a different part of the garden, as you can see I have put a lot more effort into the setup of the box and it’s a lot neater
+
 ![Image of IP54 box ](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/ IP54 box.jpg)
+
 ![Image of Secondary Controler](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/SecondaryControler.jpg)
+
 ![Image of Secondary Controler](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/SecondaryControlerExternal.jpg)
+
 ![Image of Secondary Controler](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/SecondaryControleroverview.jpg)
 
 # NodeRed. 
