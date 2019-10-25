@@ -7,6 +7,10 @@ This project was developed because.
 2.	If there is a more complex way of doing something. Hey, why not!
 3.	My requirements could not be met by a commercial off the shelf (COTS) solution
 
+
+**General disclaimer:** I write English like it’s a second language. Problem is it's my mother tongue, I firmly believe the English language was created by people who cheat at scrabble 😊 so if you see any spelling mistakes, don’t bother pointing them out.  
+
+
 # Requirments
 So in terms of requirements, they were pretty conventional generally speaking, I have a small back yard which has two hi yield sprinklers each covering an ark of about 15 meters, I also have a number of potted plants that are to be watered via some low volume sprays  as well as a small vegetable plot which is covered by five 2.5 meter ark sprays.
 To drive all of these sprinklers I have two solenoids, I turn on one solenoid to water the yard as well as the pot plants and the other solenoid to water the vegetable garden. 
@@ -73,7 +77,83 @@ In my setup, I actually have a second controller setup for a different part of t
 
 ![Image of Secondary Controler](https://github.com/tonyfitzs/homeAssitant-WateringSystem/blob/master/Images/SecondaryControleroverview.jpg)
 
+# Integration into Home Assistant 
+There are a couple of approaches with regard to getting all the buttons and switches into Home Assitant, the approach I choose to use is send the command “setoption19 1” from the console in Tasmota, this will enable Home Assitant to Autodiscover all the switches. 
+Now this approach isn’t perfect, in fact it's pretty not perfect😊 once you issue that command whatever you have named your stitches as will be sent to Home assistant, and even if you change the names Home Assitant remembers the old ones and just makes new ones, this is annoying. So what I do is make sure that I have named all my switches in Tasmota first. You do that by going into configuration, then configure other. There you will see the place to name all the switches. 
+The other approach is to use a switch.yaml file and include that in your configuration.yaml using the following line “switch: !include Includes/switch.yaml”
+Below is an example of what the MQTT setings look like for my setup.
+**Note: **when I fist started using Tasmotta, I got traped by a setting that is often assumed you know. That is the Full Topic seting in the Tasmotta MQTT settings, in my case it is set to %topic%/%prefix%/ which means that the command topic and state topic are formatted as show below, but if the setting is %prefix%/%topic%/ needless to say the command topic and state topic will look like this " cmnd/sprinklers/POWER1” sorry for those who know this. But as I said I hate assumptions. 
+########################
+##       Watering     ##
+########################
+##       Pump         ##
+########################
+  - platform: mqtt
+    name: "Pump"
+    command_topic: “sprinklers/cmnd/POWER1”
+    state_topic: “sprinklers/cmnd/POWER1"
+    qos: 1
+    payload_on: “ON”
+    payload_off: “OFF”
+    payload_available: “Online”
+    payload_not_available: “Offline”
+    retain: false 
+########################
+##        Main        ##
+########################   
+  - platform: mqtt
+    name: "Main"
+    command_topic: “sprinklers/cmnd/POWER2”
+    state_topic: “sprinklers/cmnd/POWER2”
+    qos: 1
+    payload_on: “ON”
+    payload_off: “OFF”
+    payload_available: “Online”
+    payload_not_available: “Offline”
+    retain: false   
+########################
+##         Yard       ##
+########################   
+  - platform: mqtt
+    name: "Yard"
+    command_topic: “sprinklers/cmnd/POWER4”
+    state_topic: “sprinklers/cmnd/POWER4"
+    qos: 1
+    payload_on: “ON”
+    payload_off: “OFF”
+    payload_available: “Online”
+    payload_not_available: “Offline”
+    retain: false 
+########################
+##      Garden        ##
+########################   
+  - platform: mqtt
+    name: "Garden"
+    command_topic: “sprinklers/cmnd/POWER3”
+    state_topic: “sprinklers/cmnd/POWER3
+    qos: 1
+    payload_on: “ON”
+    payload_off: “OFF”
+    payload_available: “Online”
+    payload_not_available: “Offline”
+    retain: false           
+
+once Home Assitant has the switches configured, I am going to assume you know what to do from there, of not go back to the getting started with Home Assitant videos, of which there are hundreds. 
+
+
+
+
 # NodeRed. 
 if you're not using Node-red. I have one question for you. ARE YOU MAD? 
-In my setup, I use NodeRed a lot, basically because the automation in Home assistant can get pretty unwieldy if you have to do something really complex. Now I’m not going to explain how to use NodeRed there are a heap of tutorials out there,  but what I have done is added the code from my NodeRed node that is used to control my watering system, hopefully you won't have to much trouble figuring out how to make it all work. But you will need to install the big timer component as well 
+In my setup, I use NodeRed a lot, basically because the automation in Home assistant can get pretty unwieldy if you have to do something really complex. Now I’m not going to explain how to use NodeRed there are a heap of tutorials out there,  but what I have done is added the code from my NodeRed node that is used to control my watering system; hopefully you won't have to much trouble figuring out how to make it all work. 
+
+But you will need to add a couple of components, the first one is Bigtimmer
+https://flows.nodered.org/node/node-red-contrib-bigtimer 
+the second one is bool-gate
+https://flows.nodered.org/node/node-red-contrib-bool-gate
+to add these to NodeRed it is pretty easy, all you need to do is navigate to the “manage palettes” menu in Node-red (click on the hamburger icon in the top right corner), from there you can see an install option in the top row of the form, (just under the close button) if you type into the search “bigtimer” you will see the big timmer option appear, you just need to then install it. the same applies to gate. 
+I generally find that it is better to add these additional things before importing a flow, but don’t worry if you don’t, Node-Red will tell you if something is missing, the only problem is you need to pay attention during the import or else you won't know what's missing. 
+
+I hope you have found this useful. Feel free to leave a comment or ask questions, I'm a pretty busy guy generally so if I don’t answer you right away, please don’t get offended. But I will do my best to get back to you as soon as I can. 
+
 
